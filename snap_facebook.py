@@ -4,6 +4,9 @@ from py2neo import Graph, Relationship, authenticate, Node, NodeSelector
 
 
 def build_nodes():
+    
+
+
     authenticate("localhost:7474", "neo4j", "jonty1")
     graph = Graph()
     graph.delete_all()
