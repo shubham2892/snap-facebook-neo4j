@@ -4,10 +4,11 @@ from py2neo import Graph, Relationship, authenticate, Node, NodeSelector
 
 
 def build_nodes():
-    
+
+    # Enter neo4j credentials here
+    authenticate("localhost:7474", "neo4j", "Password Here")
 
 
-    authenticate("localhost:7474", "neo4j", "jonty1")
     graph = Graph()
     graph.delete_all()
     tx = graph.begin()
